@@ -8,6 +8,7 @@ import star from './star.svg';
 import { Route, Link } from 'react-router-dom';
 import { PateTitle } from '@my-org/ui-header';
 import { ApiResponse, API_URL } from '@my-org/api-interface';
+import * as fetch from 'node-fetch';
 
 export const App = () => {
   const [apiResponse, setApiResponse] = useState<ApiResponse>({
